@@ -1,0 +1,92 @@
+# =========================
+# ASP.NET Core / .NET
+# =========================
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build & logs
+# =========================
+*.log
+*.tlog
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+.vscode/
+*.ncrunch*
+*.psess
+*.vsp
+*.vspx
+*.pidb
+*.svclog
+*.scc
+*.ilk
+*.pdb
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+*.sln.iml
+
+# =========================
+# Configuration & secrets
+# =========================
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+*.env
+
+# ⚠️ Tu peux ignorer le appsettings.json principal **si tu y mets des clés sensibles**
+# appsettings.json
+
+# =========================
+# Entity Framework Migrations (optionnel)
+# =========================
+# Si tu veux ignorer les migrations locales :
+# Migrations/
+
+# =========================
+# Publish output
+# =========================
+wwwroot/dist/
+wwwroot/build/
+publish/
+dist/
+
+# =========================
+# OS spécifiques
+# =========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# =========================
+# Node / frontend (si projet mixte)
+# =========================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
