@@ -1,92 +1,123 @@
-# =========================
-# ASP.NET Core / .NET
-# =========================
-bin/
-obj/
-out/
+# ============================
+# 🌐 FRONTEND : Angular
+# ============================
+
+# Node modules & builds
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.cache/
+frontend/.npm/
+frontend/package-lock.json
+
+# IDE
+frontend/.vscode/
+frontend/.idea/
+
+# Environment files (⚠️ Contiennent souvent des secrets)
+frontend/src/environments/environment*.ts
+
+# Logs & debug
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.DS_Store
+
+
+# ============================
+# ⚙️ BACKEND : ASP.NET Core
+# ============================
+
+# Build outputs
+backend/bin/
+backend/obj/
+backend/out/
+backend/Logs/
+
+# User-specific files
+backend/.vs/
+backend/.vscode/
 *.user
+*.rsuser
 *.suo
-*.userosscache
-*.sln.docstates
 
-# =========================
-# Build & logs
-# =========================
+# IIS / Web server files
+backend/.vs/
+backend/wwwroot/lib/
+
+# Secrets / Configs sensibles
+backend/appsettings.Development.json
+backend/appsettings.Local.json
+backend/appsettings.*.json
+
+# Packages
+backend/packages/
+*.nupkg
+
+# Coverage, cache, debug
+*.coverage
+*.coveragexml
 *.log
-*.tlog
 *.cache
-*.dbmdl
-*.dbproj.schemaview
-*.jfm
-
-# =========================
-# Visual Studio
-# =========================
-.vs/
-.vscode/
-*.ncrunch*
-*.psess
-*.vsp
-*.vspx
-*.pidb
-*.svclog
-*.scc
-*.ilk
+*.tmp
 *.pdb
 
-# =========================
-# Rider / JetBrains
-# =========================
-.idea/
-*.sln.iml
+# ============================
+# 🧠 GLOBALS
+# ============================
 
-# =========================
-# Configuration & secrets
-# =========================
-appsettings.Development.json
-appsettings.Local.json
-secrets.json
-*.env
-
-# ⚠️ Tu peux ignorer le appsettings.json principal **si tu y mets des clés sensibles**
-# appsettings.json
-
-# =========================
-# Entity Framework Migrations (optionnel)
-# =========================
-# Si tu veux ignorer les migrations locales :
-# Migrations/
-
-# =========================
-# Publish output
-# =========================
-wwwroot/dist/
-wwwroot/build/
-publish/
-dist/
-
-# =========================
-# OS spécifiques
-# =========================
-# macOS
+# OS files
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Windows
 Thumbs.db
 ehthumbs.db
+Icon?
 Desktop.ini
-$RECYCLE.BIN/
 
-# Linux
-*~
-.nfs*
+# Backup files
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
 
-# =========================
-# Node / frontend (si projet mixte)
-# =========================
-node_modules/
+# Archives
+*.zip
+*.rar
+*.tar.gz
+*.7z
+
+# Environment files
+.env
+.env.*
+
+# ============================
+# 🔧 TOOLS
+# ============================
+
+# JetBrains Rider / Visual Studio Code
+.idea/
+.vscode/
+
+# npm / yarn
 npm-debug.log
 yarn-error.log
-package-lock.json
+
+# ============================
+# 🧹 TEMP & CACHE
+# ============================
+
+# Cache folders
+*/__pycache__/
+*/.pytest_cache/
+*/.cache/
+*/tmp/
+
+# ============================
+# ✅ CUSTOM PROJECT
+# ============================
+
+# Ignore generated Swagger / API docs
+backend/Swagger/
+
+# Ignore publish output
+backend/publish/
