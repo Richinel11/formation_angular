@@ -37,6 +37,7 @@ builder.Services.AddOpenApiDocument(config =>
 });
 
 builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<ProductService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
