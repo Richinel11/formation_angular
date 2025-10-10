@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ProduitService } from './produits_service';
 import { Produit } from './modele';
@@ -8,7 +7,7 @@ import { Produit } from './modele';
 @Component({
   selector: 'app-produits',
   standalone: true,
-  imports: [CommonModule, FormsModule,HttpClientModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './img.html',
   styleUrls: ['./produits.scss']
 })
@@ -25,18 +24,23 @@ export class Produits implements OnInit {
 
   chargerProduits(): void {
     this.produitService.getProduits().subscribe({
-      next: (data: Produit[]) => this.produits = data,
-      error: (err: any) => console.error('Erreur de chargement', err)
+      next: (data) => this.produits = data,
+      error: (err) => console.error('Erreur de chargement', err)
     });
   }
 
   ajouterProduit(): void {
+    if (!this.nouveauProduit.nom || this.nouveauProduit.prix <= 0 || this.nouveauProduit.stock < 0) {
+      alert('Veuillez remplir correctement tous les champs.');
+      return;
+    }
+
     this.produitService.ajouterProduit(this.nouveauProduit).subscribe({
-      next: (p: Produit) => {
+      next: (p) => {
         this.produits.push(p);
         this.nouveauProduit = { id: 0, nom: '', prix: 0, stock: 0 };
       },
-      error: (err: any) => console.error('Erreur ajout', err)
+      error: (err) => console.error('Erreur ajout', err)
     });
   }
 }
