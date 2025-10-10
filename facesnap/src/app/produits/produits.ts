@@ -43,4 +43,25 @@ export class Produits implements OnInit {
       error: (err) => console.error('Erreur ajout', err)
     });
   }
+  editerProduit(p: Produit) {
+    this.nouveauProduit = { ...p }; 
+  }
+
+  mettreAJourProduit() {
+    this.produitService.mettreAJourProduit(this.nouveauProduit).subscribe(p => {
+      const index = this.produits.findIndex(prod => prod.id === p.id);
+      if (index !== -1) this.produits[index] = p;
+      this.resetProduit();
+    });
+  }
+
+  supprimerProduit(id: number) {
+    this.produitService.supprimerProduit(id).subscribe(() => {
+      this.produits = this.produits.filter(p => p.id !== id);
+    });
+  }
+
+  resetProduit() {
+    this.nouveauProduit = { id: 0, nom: '', prix: 0, stock: 0 };
+  }
 }

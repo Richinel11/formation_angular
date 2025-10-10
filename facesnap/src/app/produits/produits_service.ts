@@ -3,12 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Produit } from './modele';
 
- 
 @Injectable({
   providedIn: 'root'
 })
 export class ProduitService {
-  private apiUrl = 'http://localhost:3000/produits';
+  private apiUrl = 'https://aa9feade51b5.ngrok-free.app/swagger';
 
   constructor(private http: HttpClient) {}
 
@@ -18,5 +17,13 @@ export class ProduitService {
 
   ajouterProduit(p: Produit): Observable<Produit> {
     return this.http.post<Produit>(this.apiUrl, p);
+  }
+
+  mettreAJourProduit(p: Produit): Observable<Produit> {
+    return this.http.put<Produit>(`${this.apiUrl}/${p.id}`, p);
+  }
+
+  supprimerProduit(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }
