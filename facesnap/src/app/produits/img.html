@@ -1,0 +1,16 @@
+<p>img works!</p>
+
+<h2>Liste des produits</h2>
+
+<form (ngSubmit)="ajouterProduit()">
+  <input type="text" [(ngModel)]="nouveauProduit.nom" name="nom" placeholder="Nom">
+  <input type="number" [(ngModel)]="nouveauProduit.prix" name="prix" placeholder="Prix">
+  <input type="number" [(ngModel)]="nouveauProduit.stock" name="stock" placeholder="Stock">
+  <button type="submit">Ajouter</button>
+</form>
+
+<ul>
+  <li *ngFor="let p of produits">
+    {{p.nom}} - {{p.prix}} FCFA - (Stock: {{p.stock}})
+  </li>
+</ul>
