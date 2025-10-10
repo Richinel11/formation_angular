@@ -121,3 +121,5 @@ backend/Swagger/
 
 # Ignore publish output
 backend/publish/
+
+.fake

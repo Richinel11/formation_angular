@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -46,12 +46,11 @@
               "RelativeToolTip": "Services\\AuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T09:34:35.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T09:34:35.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "dbConn.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\dbConn.cs",
               "RelativeDocumentMoniker": "dbConn.cs",
@@ -59,12 +58,11 @@
               "RelativeToolTip": "dbConn.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T09:32:16.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T09:32:16.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
@@ -72,25 +70,24 @@
               "RelativeToolTip": "Controllers\\ProductsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T09:08:06.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T09:08:06.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
               "ToolTip": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Services\\ProductService.cs",
               "RelativeToolTip": "Services\\ProductService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAnwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAIA6wBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T08:39:59.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
@@ -98,18 +95,17 @@
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T08:39:36.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T08:39:36.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAAtAAAAAAAAAA==",
+              "ToolTip": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAADoAAAAAAAAAAAAIwEgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T13:45:40.605Z",
               "EditorCaption": ""

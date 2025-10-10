@@ -43,6 +43,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 //builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy
+            .AllowAnyOrigin()   // <--- autorise toutes les adresses (Ngrok, IP, localhost…)
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -57,6 +69,8 @@ if (app.Environment.IsDevelopment())
     });
 
 }
+
+app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 
