@@ -7,7 +7,7 @@ import { Produit } from './modele';
   providedIn: 'root'
 })
 export class ProduitService {
-  private apiUrl = 'https://aa9feade51b5.ngrok-free.app/swagger';
+  private apiUrl = 'http://localhost:5167/api/products';
 
   constructor(private http: HttpClient) {}
 

@@ -14,7 +14,7 @@ import { Produit } from './modele';
 export class Produits implements OnInit {
 
   produits: Produit[] = [];
-  nouveauProduit: Produit = { id: 0, nom: '', prix: 0, stock: 0 };
+  nouveauProduit: Produit = { id: 0, name: '', price: 0, stock: 0, description: ''   };
 
   constructor(private produitService: ProduitService) {}
 
@@ -30,15 +30,15 @@ export class Produits implements OnInit {
   }
 
   ajouterProduit(): void {
-    if (!this.nouveauProduit.nom || this.nouveauProduit.prix <= 0 || this.nouveauProduit.stock < 0) {
+    if (!this.nouveauProduit.name || this.nouveauProduit.price <= 0 || this.nouveauProduit.stock < 0) {
       alert('Veuillez remplir correctement tous les champs.');
       return;
     }
-
+    console.log('Données envoyées au backend :', this.nouveauProduit);
     this.produitService.ajouterProduit(this.nouveauProduit).subscribe({
       next: (p) => {
         this.produits.push(p);
-        this.nouveauProduit = { id: 0, nom: '', prix: 0, stock: 0 };
+        this.nouveauProduit = { id: 0, name: '', price: 0, stock: 0, description: '' };
       },
       error: (err) => console.error('Erreur ajout', err)
     });
@@ -62,6 +62,6 @@ export class Produits implements OnInit {
   }
 
   resetProduit() {
-    this.nouveauProduit = { id: 0, nom: '', prix: 0, stock: 0 };
+    this.nouveauProduit = { id: 0, name: '', price: 0, stock: 0, description: '' };
   }
 }
