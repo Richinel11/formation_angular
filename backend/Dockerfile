@@ -2,12 +2,12 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
-# Copie le fichier csproj et restaure les dépendances
-COPY *.csproj ./
+# Copier le csproj et restaurer les dépendances
+COPY backend/*.csproj ./
 RUN dotnet restore
 
-# Copie le reste du code et publie
-COPY . ./
+# Copier le reste et publier
+COPY backend/. ./
 RUN dotnet publish -c Release -o out
 
 # Étape 2 : Runtime
@@ -15,9 +15,11 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/out .
 
-# Expose le port HTTP standard
+# Port utilisé par Render
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
 
-# Démarre ton application
+# Indique à EF Core où trouver la BDD (via variable Render)
+ENV ConnectionStrings__DefaultConnection="server=${DB_HOST};port=3306;database=${DB_NAME};user=${DB_USER};password=${DB_PASSWORD}"
+
 ENTRYPOINT ["dotnet", "backend.dll"]
