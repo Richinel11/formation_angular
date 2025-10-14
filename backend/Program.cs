@@ -8,9 +8,13 @@ using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<dbConn>(opt =>
-    opt.UseMySql(builder.Configuration.GetConnectionString("dbConn"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("dbConn"))));
+// builder.Services.AddDbContext<dbConn>(opt =>
+//     opt.UseMySql(builder.Configuration.GetConnectionString("dbConn"),
+//         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("dbConn"))));
+
+// Nouveau code PostgreSQL
+builder.Services.AddDbContext<dbConn>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add JWT Auth
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -48,7 +52,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll", policy =>
     {
         policy
-            .AllowAnyOrigin()   // <--- autorise toutes les adresses (Ngrok, IP, localhost…)
+            .AllowAnyOrigin()   // <--- autorise toutes les adresses (Ngrok, IP, localhostï¿½)
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
