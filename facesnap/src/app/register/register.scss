@@ -1,0 +1,159 @@
+// Variables
+$primary-color: #007bff;
+$white: #ffffff;
+$secondary-color: #6c757d;
+$text-color: #333333;
+$gray: #6c757d;
+$light-gray: #f8f9fa;
+$border-color: #ddd;
+
+.register-container {
+  min-height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #38393b 30%, #edecef 100%);
+  padding: 20px;
+}
+
+.register-box {
+  background: $white;
+  padding: 05px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 420px;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  color: $primary-color;
+  margin-bottom: 15px;
+
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: $text-color;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: $gray;
+  margin-bottom: 35px;
+}
+
+.register-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: $text-color;
+    margin-bottom: 8px;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 2px solid $border-color;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+
+    &::placeholder {
+      color: adjust($gray, 20%);
+    }
+  }
+}
+
+.password-wrapper {
+  position: relative;
+
+  .form-control {
+    padding-right: 45px;
+  }
+
+}
+
+.btn {
+  width: 100%;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $white;
+
+  &:hover {
+    background-color: $secondary-color;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.footer-text {
+  margin-top: 25px;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+    color: $gray;
+    margin-bottom: 10px;
+  }
+
+  .link {
+    color: $primary-color;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .link-back {
+    color: $gray;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

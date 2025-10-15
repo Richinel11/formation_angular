@@ -1,0 +1,98 @@
+<div class="register-container">
+  <div class="register-box">
+    <!-- Logo -->
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+        <line x1="12" y1="22.08" x2="12" y2="12"/>
+      </svg>
+    </div>
+
+    <h1 class="title">Stock Manager</h1>
+    <p class="subtitle">Créez votre compte</p>
+
+    <!-- Formulaire d'inscription -->
+    <form (ngSubmit)="onSubmit()" class="register-form">
+
+      <!-- Champ Nom -->
+      <div class="form-group">
+        <label for="name">Nom complet</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          placeholder="Entrez votre nom"
+          [(ngModel)]="name"
+          name="name"
+          required
+        >
+      </div>
+
+      <!-- Champ Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          placeholder="Entrez votre email"
+          [(ngModel)]="email"
+          name="email"
+          required
+        >
+      </div>
+
+      <!-- Champ Mot de passe -->
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <div class="password-wrapper">
+          <input
+            [type]="showPassword ? 'text' : 'password'"
+            id="password"
+            class="form-control"
+            placeholder="Créez un mot de passe"
+            [(ngModel)]="password"
+            name="password"
+            required
+          >
+          <!-- <button type="button" class="toggle-password" (click)="togglePassword()">
+            <span *ngIf="!showPassword">👁️</span>
+            <span *ngIf="showPassword">🙈</span>
+          </button> -->
+        </div>
+      </div>
+
+      <!-- Champ Confirmation mot de passe -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirmer le mot de passe</label>
+        <div class="password-wrapper">
+          <input
+            [type]="showConfirmPassword ? 'text' : 'password'"
+            id="confirmPassword"
+            class="form-control"
+            placeholder="Confirmez votre mot de passe"
+            [(ngModel)]="confirmPassword"
+            name="confirmPassword"
+            required
+          >
+
+        </div>
+      </div>
+
+      <!-- Bouton d'inscription -->
+      <button type="submit" class="btn btn-primary">
+        S'inscrire
+      </button>
+    </form>
+
+    <!-- Lien vers connexion -->
+    <div class="footer-text">
+      <p>
+        Vous avez déjà un compte?
+        <a (click)="goToLogin()" class="link">Connectez-vous</a>
+      </p>
+      <a (click)="goToHome()" class="link-back">← Retour à l'accueil</a>
+    </div>
+  </div>
+</div>
