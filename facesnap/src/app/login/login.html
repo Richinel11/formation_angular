@@ -1,0 +1,64 @@
+<div class="login-container">
+  <div class="login-box">
+    <!-- Logo -->
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+        <line x1="12" y1="22.08" x2="12" y2="12"/>
+      </svg>
+    </div>
+
+    <h1 class="title">Stock Manager</h1>
+    <p class="subtitle">Connectez-vous pour continuer</p>
+
+    <!-- Formulaire de connexion -->
+    <form (ngSubmit)="onSubmit()" class="login-form">
+
+      <!-- Champ Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          placeholder="Entrez votre email"
+          [(ngModel)]="email"
+          name="email"
+          required
+        >
+      </div>
+
+      <!-- Champ Mot de passe -->
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <div class="password-wrapper">
+          <input
+            [type]="showPassword ? 'text' : 'password'"
+            id="password"
+            class="form-control"
+            placeholder="Entrez votre mot de passe"
+            [(ngModel)]="password"
+            name="password"
+            required
+          >
+
+        </div>
+      </div>
+
+      <!-- Bouton de connexion -->
+      <button type="submit" class="btn btn-primary">
+        Se connecter
+      </button>
+    </form>
+
+    <!-- Lien vers inscription -->
+    <div class="footer-text">
+      <p>
+        Pas encore de compte?
+        <a (click)="goToRegister()" class="link">Inscrivez-vous</a>
+      </p>
+      <a (click)="goToHome()" class="link-back">← Retour à l'accueil</a>
+    </div>
+  </div>
+</div>
