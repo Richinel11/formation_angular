@@ -7,7 +7,8 @@ import { Produit } from './modele';
   providedIn: 'root'
 })
 export class ProduitService {
-  private apiUrl = 'https://formation-angular.onrender.com';
+
+  private apiUrl = 'https://formation-angular.onrender.com/api/products';
 
   constructor(private http: HttpClient) {}
 

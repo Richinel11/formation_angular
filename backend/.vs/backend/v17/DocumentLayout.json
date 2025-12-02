@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\dbconn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:dbconn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\dbconn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|solutionrelative:dbconn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6E6BEB5-31C4-40D0-8FFC-6740BFD924BC}|backend.csproj|d:\\projects\\scolaire\\lv5 enspd\\formation_angular\\backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -50,19 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "dbConn.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\dbConn.cs",
               "RelativeDocumentMoniker": "dbConn.cs",
               "ToolTip": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\dbConn.cs",
               "RelativeToolTip": "dbConn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T09:32:16.542Z"
+              "WhenOpened": "2025-10-09T09:32:16.542Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
@@ -74,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
@@ -92,14 +93,14 @@
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAA+wAoAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T08:39:36.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\projects\\Scolaire\\LV5 ENSPD\\formation_angular\\backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
