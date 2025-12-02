@@ -60,6 +60,7 @@ builder.Services.AddCors(options =>
 
 
 var app = builder.Build();
+app.UseCors("AllowAll");
 
 if (app.Environment.IsDevelopment())
 {
@@ -74,7 +75,7 @@ if (app.Environment.IsDevelopment())
 
 }
 
-app.UseCors("AllowAll");
+
 app.UseAuthentication();
 app.UseAuthorization();
 
