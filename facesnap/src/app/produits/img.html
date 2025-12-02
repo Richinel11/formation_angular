@@ -1,16 +1,30 @@
 <h2>Liste des produits</h2>
 
 <form (ngSubmit)="ajouterProduit()">
-  <input type="text" [(ngModel)]="nouveauProduit.name" name="name" placeholder="name" required>
-  <input type="number" [(ngModel)]="nouveauProduit.price" name="prix" placeholder="Prix" required>
-  <input type="number" [(ngModel)]="nouveauProduit.stock" name="stock" placeholder="Stock" required>
+  <input
+    type="text"
+    [(ngModel)]="nouveauProduit.name"
+    name="name"
+    placeholder="Nom du produit"
+    required
+  />
+  <input type="number" [(ngModel)]="nouveauProduit.price" name="prix" placeholder="Prix" required />
+  <input
+    type="number"
+    [(ngModel)]="nouveauProduit.stock"
+    name="stock"
+    placeholder="Stock"
+    required
+  />
   <button type="submit">{{ nouveauProduit.id ? 'Mettre à jour' : 'Ajouter' }}</button>
 </form>
 
 <ul>
   <li *ngFor="let p of produits">
-    {{p.name}} - {{p.price}} FCFA - (Stock: {{p.stock}})
-    <button (click)="editerProduit(p)">Modifier</button>
-    <button (click)="supprimerProduit(p.id)">Supprimer</button>
+    <span>{{ p.name }} - {{ p.price }} FCFA - Stock: {{ p.stock }}</span>
+    <div>
+      <button (click)="editerProduit(p)">Modifier</button>
+      <button (click)="supprimerProduit(p.id)">Supprimer</button>
+    </div>
   </li>
 </ul>
